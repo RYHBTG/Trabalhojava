@@ -9,4 +9,5 @@ FUNÇÕES A ADICIONAR
     - private String Region
     - private String SpecialSet
 - Dentro de cada Classe "Filha" inclua também as variáveis únicas para que não haja conflito.
-- Tirar também as três variáveis private presentes logo no ínicio da classe mãe Animais
+- Tirar também as três variáveis private presentes logo no ínicio da classe mãe Animais e deixar uma no lugar "private String especie".
+- Tomar cuidado quando estiver realizando o Menu, todas as classes filhas vão dar @Override em cima da variável especie, então quando for fazer o colocamento tomar cuidado com erros!
