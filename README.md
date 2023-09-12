@@ -8,4 +8,5 @@ FUNÇÕES A ADICIONAR
     - private String NomeDoAnimal
     - private String Region
     - private String SpecialSet
-- Incluir no menu as interações necessárias para realizar as ações finais!
+- Dentro de cada Classe "Filha" inclua também as variáveis únicas para que não haja conflito.
+- Tirar também as três variáveis private presentes logo no ínicio da classe mãe Animais
