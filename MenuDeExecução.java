@@ -18,7 +18,7 @@ public class MenuDeExecução{
             switch (opc) {
                 case 1:
                     especie = new Aquatico();
-                    aquatico.setEspecies();
+                    especie.setEspecies();
                     break;
 
                 case 2:
