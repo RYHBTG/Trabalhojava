@@ -14,9 +14,7 @@ public class Animais {
          this.SpecialSet = specialSet;
      }
 
-     public String getEspecies() {
-         return especies;
-     }
+
 
      public void setEspecies() {
          Scanner scanner = new Scanner(System.in);
