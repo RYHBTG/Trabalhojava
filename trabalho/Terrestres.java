@@ -5,6 +5,9 @@ public class Terrestres extends Animais {
     public Terrestres(String nomedoanimal, String region, String specialSet) {
         super(nomedoanimal, region, specialSet);
     }
+    public Terrestres(){
+        
+    }
 
     @Override
     public void setEspecies() {
