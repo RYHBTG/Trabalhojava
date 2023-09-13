@@ -19,7 +19,7 @@ public class Animais {
          return especies;
      }
 
-     public String setEspecies() {
+     public String setEspecies(String especies, String nomedoanimal, String region, String specialSet) {
          Scanner scanner = new Scanner(System.in);
          System.out.println("Digite qual o nome do animal: ");
          this.NomeDoAnimal = scanner.nextLine();
