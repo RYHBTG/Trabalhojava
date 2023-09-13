@@ -8,7 +8,7 @@ public class Aquatico extends Animais{
         
     }
     @Override
-    public String setEspecies(String especies) {
+    public String setEspecies() {
         super.setEspecies(especies);
         return especies;
     }
