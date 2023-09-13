@@ -2,8 +2,8 @@ package trabalho;
 
 public class Aquatico extends Animais{
     private String especie;
-    public Aquatico(String nomedoanimal, String region, String specialSet) {
-        super(nomedoanimal, region, specialSet);
+    public Aquatico(String nomedoanimal, String region, String specialset) {
+        super(nomedoanimal, region, specialset);
     }
     public Aquatico(){
         
