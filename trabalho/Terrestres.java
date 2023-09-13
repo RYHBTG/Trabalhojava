@@ -3,18 +3,13 @@ package trabalho;
 import java.util.Scanner;
 
 public class Terrestres extends Animais {
-    public Terrestres() {
-    }
-
-    public Terrestres(String terrestre, String aquatico, String voador) {
-        super(terrestre, aquatico, voador);
+    public Terrestres(String especies, String nomedoanimal, String region, String specialSet) {
+        super(especies, nomedoanimal, region, specialSet);
     }
 
     @Override
-    public String setTerrestre(String Terrestre) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Digite qual animal deseja se tornar");
-        scanner.nextLine();
-        return super.setTerrestre(Terrestre);
+    public String setEspecies(String especies) {
+        super.setEspecies(especies);
+        return especies;
     }
 }

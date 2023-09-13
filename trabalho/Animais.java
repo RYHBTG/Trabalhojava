@@ -1,41 +1,34 @@
 package trabalho;
 
- public class Animais {
-    private String terrestre;
-    private String aquatico;
-    private String voador;
-    public Animais(){
+import java.sql.SQLOutput;
+import java.util.Scanner;
 
-    }
-    public Animais(String terrestre, String aquatico, String voador){
-        this.terrestre = terrestre;
-        this.aquatico = aquatico;
-        this.voador = voador;
-    }
-    public String getTerrestre(){
-        return terrestre;
-    }
-    public String getAquatico(){
-        return aquatico;
-    }
-    public String getVoador(){
-        return voador;
-    }
+public class Animais {
+     private String especies;
+     private String NomeDoAnimal;
+     private String Region;
+     private String SpecialSet;
+     public Animais(String especies, String nomedoanimal, String region, String specialSet) {
+         this.especies = especies;
+         this.NomeDoAnimal = nomedoanimal;
+         this.Region = region;
+         this.SpecialSet = specialSet;
+     }
 
-    public String setTerrestre(String Terrestre) {
-        this.terrestre = terrestre;
-        return Terrestre;
-    }
+     public String getEspecies() {
+         return especies;
+     }
 
-    public String setAquatico(String Aquatico) {
-        this.aquatico = aquatico;
-        return Aquatico;
-    }
-
-    public String setVoador(String Voador) {
-        this.voador = voador;
-        return Voador;
-    }
-
+     public String setEspecies(String especies) {
+         Scanner scanner = new Scanner(System.in);
+         System.out.println("Digite qual o nome do animal: ");
+         this.NomeDoAnimal = scanner.nextLine();
+         System.out.println("Digite a regiao desejada (pais, bioma, etc): ");
+         this.Region = scanner.nextLine();
+         System.out.println("Digite alguma caracteristica especial: ");
+         this.SpecialSet = scanner.nextLine();
+         this.especies = especies;
+         return especies;
+     }
 
  }

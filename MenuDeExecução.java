@@ -1,28 +1,43 @@
-package trabalho;
-
+import trabalho.*;
 import java.util.Scanner;
 
-public class MenuDeReencarnacao {
-
+public class MenuDeExecução{
     public static void main(String[] args) {
+        Aquatico aquatico = new Aquatico(null,null,null,null);
+
+        Voador voador = new Voador(null,null,null,null);
+
+        Terrestres terrestres = new Terrestres(null,null,null,null);
+
+        Animais animal = new Animais(null,null,null,null);
+
         Scanner leitor = new Scanner(System.in);
-        Animais animal = new Animais(null,null,null);
-        Terrestres terrestres = new Terrestres(null,null,null);
+
         while (true) {
             System.out.println("Você foi escolhido para reencarnar como um animal!");
             System.out.println("Realize a escolha desejada:");
             System.out.println("1 - Aquático");
             System.out.println("2 - Terrestre");
             System.out.println("3 - Voador");
+            System.out.println("4 - Mostrar escolha: ");
             int opc = leitor.nextInt();
-
             switch (opc) {
                 case 1:
+                    aquatico.setEspecies();
                     break;
+
                 case 2:
+                    terrestres.setEspecies();
                     break;
+
                 case 3:
+                    voador.setEspecies();
                     break;
+
+                case 4:
+                    animal.getEspecies();
+                    break;
+
                 default:
                     System.out.println("Escolha inválida! Tente novamente.");
                     break;
