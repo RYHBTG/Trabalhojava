@@ -4,29 +4,29 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Animais {
-     private String nomeDoAnimal;
+     private String nomedoanimal;
      private String region;
-     private String specialSet;
-     public Animais(String especies, String nomedoanimal, String region, String specialSet) {
+     private String specialset;
+     public Animais(String especies, String nomedoanimal, String region, String specialset) {
          this.especies = especies;
-         this.NomeDoAnimal = nomedoanimal;
-         this.Region = region;
-         this.SpecialSet = specialSet;
+         this.nomedoanimal = nomedoanimal;
+         this.region = region;
+         this.specialset = specialset;
      }
 
-     public String mostrarEspecie(){
+     public String mostrarespecie(){
           String resumo;
-          resumo = "Nome: " + getnomeDoAnimal() + "\n" + "Regiao: " + getregion() + "\n" + "Caracteristica especial: " + getspecialSet();
+          resumo = "Nome: " + getnomedoanimal() + "\n" + "Regiao: " + getregion() + "\n" + "Caracteristica especial: " + getspecialset();
           return resumo;
      }
 
      public void setEspecies() {
          Scanner scanner = new Scanner(System.in);
          System.out.println("Digite qual o nome do animal: ");
-         this.NomeDoAnimal = scanner.nextLine();
+         this.nomedoanimal = scanner.nextLine();
          System.out.println("Digite a regiao desejada (pais, bioma, etc): ");
-         this.Region = scanner.nextLine();
+         this.region = scanner.nextLine();
          System.out.println("Digite alguma caracteristica especial: ");
-         this.SpecialSet = scanner.nextLine();
+         this.specialset = scanner.nextLine();
      }
  }
