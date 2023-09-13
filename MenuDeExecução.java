@@ -3,13 +3,7 @@ import java.util.Scanner;
 
 public class MenuDeExecução{
     public static void main(String[] args) {
-        Aquatico aquatico = new Aquatico(null,null,null,null);
-
-        Voador voador = new Voador(null,null,null,null);
-
-        Terrestres terrestres = new Terrestres(null,null,null,null);
-
-        Animais animal = new Animais(null,null,null,null);
+        Animal especie;
 
         Scanner leitor = new Scanner(System.in);
 
@@ -23,6 +17,7 @@ public class MenuDeExecução{
             int opc = leitor.nextInt();
             switch (opc) {
                 case 1:
+                    especie = new Aquatico();
                     aquatico.setEspecies();
                     break;
 
