@@ -1,8 +1,7 @@
 package trabalho;
 
-import java.util.Scanner;
-
 public class Terrestres extends Animais {
+    private String especie;
     public Terrestres(String nomedoanimal, String region, String specialSet) {
         super(nomedoanimal, region, specialSet);
     }
