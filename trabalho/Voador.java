@@ -5,6 +5,9 @@ public class Voador extends Animais{
     public Voador(String especies, String nomedoanimal, String region, String specialSet) {
         super(especies, nomedoanimal, region, specialSet);
     }
+    public Voador (){
+        
+    }
 
     @Override
     public String setEspecies(String especies) {
