@@ -4,7 +4,6 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Animais {
-     private String especies;
      private String NomeDoAnimal;
      private String Region;
      private String SpecialSet;
@@ -19,7 +18,7 @@ public class Animais {
          return especies;
      }
 
-     public String setEspecies(String especies, String nomedoanimal, String region, String specialSet) {
+     public void setEspecies() {
          Scanner scanner = new Scanner(System.in);
          System.out.println("Digite qual o nome do animal: ");
          this.NomeDoAnimal = scanner.nextLine();
@@ -27,9 +26,5 @@ public class Animais {
          this.Region = scanner.nextLine();
          System.out.println("Digite alguma caracteristica especial: ");
          this.SpecialSet = scanner.nextLine();
-          System.out.println("Especie feita");
-          this.especies = scanner.nextLine();
-         return especies;
      }
-
  }
