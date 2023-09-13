@@ -1,15 +1,16 @@
 package trabalho;
 
 public class Aquatico extends Animais{
-    public Aquatico(String especies, String nomedoanimal, String region, String specialSet) {
-        super(especies, nomedoanimal, region, specialSet);
+    private String especie;
+    public Aquatico(String nomedoanimal, String region, String specialSet) {
+        super(nomedoanimal, region, specialSet);
     }
     public Aquatico(){
         
     }
     @Override
-    public String setEspecies() {
-        super.setEspecies(especies);
-        return especies;
+    public void setEspecies() {
+        super.setEspecies();
+        especie = "aquatico";
     }
 }
