@@ -14,5 +14,10 @@ public class Aquatico extends Animais{
         especie = "aquatico";
     }
     @Override
-    public String 
+    public String mostrarEspecie(){
+        String resumo;
+        resumo = supper.mostrarEspecie();
+        resumo += "\nEspecie: " + getEspecie();
+        return resumo;
+     }
 }
