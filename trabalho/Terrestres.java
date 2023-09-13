@@ -3,14 +3,14 @@ package trabalho;
 import java.util.Scanner;
 
 public class Terrestres extends Animais {
-    public Terrestres(String especies, String nomedoanimal, String region, String specialSet) {
-        super(especies, nomedoanimal, region, specialSet);
+    public Terrestres(String nomedoanimal, String region, String specialSet) {
+        super(nomedoanimal, region, specialSet);
     }
 
     @Override
-    public String setEspecies(String especies) {
-        super.setEspecies(especies);
-        return especies;
+    public void setEspecies() {
+        super.setEspecies();
+        especie = "Terrestres";
     }
     @Override
     public String mostrarEspecie(){
