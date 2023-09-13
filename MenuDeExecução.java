@@ -22,15 +22,17 @@ public class MenuDeExecução{
                     break;
 
                 case 2:
-                    terrestres.setEspecies();
+                    especie = new Terrestre
+                    especie.setEspecies();
                     break;
 
                 case 3:
-                    voador.setEspecies();
+                    especie = new Voador
+                    especie.setEspecies();
                     break;
 
                 case 4:
-                    animal.getEspecies();
+                    especie.getEspecies();
                     break;
 
                 default:
