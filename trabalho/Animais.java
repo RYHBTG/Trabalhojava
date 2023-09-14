@@ -20,24 +20,12 @@ public class Animais {
         return nomedoanimal;
     }
 
-    public void setnomedoanimal(String nomedoanimal) {
-        this.nomedoanimal = nomedoanimal;
-    }
-
     public String getregion() {
         return region;
     }
 
-    public void setregion(String region) {
-        this.region = region;
-    }
-
     public String getspecialset() {
         return specialset;
-    }
-
-    public void setspecialset(String specialset) {
-        this.specialset = specialset;
     }
 
     public String mostrarespecie(){
