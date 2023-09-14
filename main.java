@@ -1,10 +1,9 @@
 import trabalho.*;
 import java.util.Scanner;
 
-public class MenuDeExecução{
+public class main{
     public static void main(String[] args) {
-        Animal especie;
-
+        Animais especie;
         Scanner leitor = new Scanner(System.in);
 
         while (true) {
@@ -13,7 +12,8 @@ public class MenuDeExecução{
             System.out.println("1 - Aquático");
             System.out.println("2 - Terrestre");
             System.out.println("3 - Voador");
-            System.out.println("4 - Mostrar escolha: ");
+            System.out.println("4 - Mostrar escolha");
+            System.out.print("Escolha: ");
             int opc = leitor.nextInt();
             switch (opc) {
                 case 1:
@@ -22,17 +22,17 @@ public class MenuDeExecução{
                     break;
 
                 case 2:
-                    especie = new Terrestre
+                    especie = new Terrestres();
                     especie.setEspecies();
                     break;
 
                 case 3:
-                    especie = new Voador
+                    especie = new Voador();
                     especie.setEspecies();
                     break;
 
                 case 4:
-                    especie.getEspecies();
+                    especie.mostrarespecie();
                     break;
 
                 default:

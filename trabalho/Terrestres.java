@@ -2,11 +2,16 @@ package trabalho;
 
 public class Terrestres extends Animais {
     private String especie;
+    private Terrestres supper;
     public Terrestres(String nomedoanimal, String region, String specialSet) {
         super(nomedoanimal, region, specialSet);
     }
     public Terrestres(){
         
+    }
+
+    public String getespecie() {
+        return especie;
     }
 
     @Override
@@ -15,10 +20,10 @@ public class Terrestres extends Animais {
         especie = "Terrestres";
     }
     @Override
-    public String mostrarEspecie(){
+    public String mostrarespecie() {
         String resumo;
-        resumo = supper.mostrarEspecie();
-        resumo += "\nEspecie: " + getEspecie();
+        resumo = super.mostrarespecie();
+        resumo += "\nEspecie: " + getespecie();
         return resumo;
-     }
+    }
 }

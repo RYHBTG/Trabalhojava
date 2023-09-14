@@ -2,23 +2,29 @@ package trabalho;
 
 public class Voador extends Animais{
     private String especie;
-    public Voador(String especies, String nomedoanimal, String region, String specialset) {
-        super(especies, nomedoanimal, region, specialSet);
+    private Voador supper;
+    public Voador(String nomedoanimal, String region, String specialset) {
+        super(nomedoanimal, region, specialset);
     }
     public Voador (){
         
     }
 
-     @Override
+    public String getespecie() {
+        return especie;
+    }
+
+    @Override
     public void setEspecies() {
         super.setEspecies();
         especie = "Voador";
     }
+
     @Override
-    public String mostrarEspecie(){
+    public String mostrarespecie() {
         String resumo;
-        resumo = supper.mostrarEspecie();
-        resumo += "\nEspecie: " + getEspecie();
+        resumo = super.mostrarespecie();
+        resumo += "\nEspecie: " + getespecie();
         return resumo;
-     }
+    }
 }

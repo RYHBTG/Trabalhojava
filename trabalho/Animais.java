@@ -7,14 +7,40 @@ public class Animais {
      private String nomedoanimal;
      private String region;
      private String specialset;
-     public Animais(String especies, String nomedoanimal, String region, String specialset) {
-         this.especies = especies;
+     public Animais(String nomedoanimal, String region, String specialset) {
          this.nomedoanimal = nomedoanimal;
          this.region = region;
          this.specialset = specialset;
      }
+     public Animais(){
 
-     public String mostrarespecie(){
+     }
+
+    public String getnomedoanimal() {
+        return nomedoanimal;
+    }
+
+    public void setnomedoanimal(String nomedoanimal) {
+        this.nomedoanimal = nomedoanimal;
+    }
+
+    public String getregion() {
+        return region;
+    }
+
+    public void setregion(String region) {
+        this.region = region;
+    }
+
+    public String getspecialset() {
+        return specialset;
+    }
+
+    public void setspecialset(String specialset) {
+        this.specialset = specialset;
+    }
+
+    public String mostrarespecie(){
           String resumo;
           resumo = "Nome: " + getnomedoanimal() + "\n" + "Regiao: " + getregion() + "\n" + "Caracteristica especial: " + getspecialset();
           return resumo;
