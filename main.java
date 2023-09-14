@@ -5,7 +5,7 @@ public class main{
     public static void main(String[] args) {
         Animais especie;
         Scanner leitor = new Scanner(System.in);
-        especie = new Animais;
+        especie = new Animais();
 
         while (true) {
             System.out.println("Você foi escolhido para reencarnar como um animal!");
@@ -33,7 +33,7 @@ public class main{
                     break;
 
                 case 4:
-                    especie.mostrarespecie();
+                    Sytem.out.println(especie.mostrarespecie());
                     break;
 
                 default:
